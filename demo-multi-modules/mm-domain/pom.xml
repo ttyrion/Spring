@@ -6,11 +6,11 @@
         <groupId>com.example</groupId>
         <artifactId>demo-multi-modules</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
     <artifactId>mm-domain</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${mm.version}</version>
     <name>mm-domain</name>
     <description>Demo project for Spring Boot</description>
 
@@ -22,6 +22,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <layout>NONE</layout>
+                </configuration>
             </plugin>
         </plugins>
     </build>
