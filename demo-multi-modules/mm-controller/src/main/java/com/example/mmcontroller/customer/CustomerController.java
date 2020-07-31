@@ -14,6 +14,7 @@ import com.example.mmdomain.Customer;
 public class CustomerController {
     @GetMapping("customer/{customerId}")
     public Customer getCustomer(@PathVariable Integer customerId) {
+        System.out.println("get customer...");
         Customer c = new Customer();
         c.setId(customerId);
         c.setName("Hello" + customerId);

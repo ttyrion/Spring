@@ -5,12 +5,11 @@
     <parent>
         <groupId>com.example</groupId>
         <artifactId>demo-multi-modules</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
+        <version>0.0.2-SNAPSHOT</version>
     </parent>
     <groupId>com.example</groupId>
     <artifactId>mm-application</artifactId>
-    <version>${mm.version}</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>mm-application</name>
     <description>Demo project for Spring Boot</description>
 
@@ -29,7 +28,7 @@
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>mm-controller</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.2-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
@@ -38,6 +37,13 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
