@@ -30,6 +30,11 @@
             <artifactId>mm-controller</artifactId>
             <version>0.0.2-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
