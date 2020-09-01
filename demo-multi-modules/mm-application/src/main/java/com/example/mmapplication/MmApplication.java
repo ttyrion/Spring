@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.context.WebServerApplicationContext;
 import org.springframework.context.annotation.*;
 import org.springframework.scheduling.annotation.EnableAsync;
-// import com.example.mmapplication.conditions.RunnerCondition;
+import com.example.mmapplication.conditions.RunnerCondition;
 
 @SpringBootApplication
 @ComponentScan(basePackages = "com.example")
@@ -19,7 +19,7 @@ public class MmApplication {
     }
 
     @Bean
-    // @Conditional(RunnerCondition.class)
+    @Conditional(RunnerCondition.class)
     public ApplicationRunner runner(WebServerApplicationContext context) {
         return args -> {
             System.out.println("*************");
