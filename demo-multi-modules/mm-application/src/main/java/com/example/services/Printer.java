@@ -3,11 +3,13 @@ package com.example.services;
 import com.example.services.LogEntity;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 // @Component
 @Configuration
+@Import(LogEntity.class)
 public class Printer {
     private LogEntity loge_;
 
@@ -15,7 +17,6 @@ public class Printer {
         loge_ = new LogEntity();
     }
 
-    @Bean
     public LogEntity getLogEntity() {
         System.out.print("Init LogEntity Bean...");
         return new LogEntity();
