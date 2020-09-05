@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.context.ApplicationContextProxy;
 import org.springframework.scheduling.annotation.Scheduled;
 
 /**
