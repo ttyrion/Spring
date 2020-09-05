@@ -3,31 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.2.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.example</groupId>
+        <artifactId>demo-multi-modules</artifactId>
+        <version>0.0.2-SNAPSHOT</version>
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>demo-multi-modules</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
-    <name>demo-multi-modules</name>
-    <packaging>pom</packaging>
-    <description>Demo project for Spring Boot</description>
-
-    <!--子模块将继承这些properties-->
-    <properties>
-        <java.version>1.8</java.version>
-        <mm.version>0.0.2-SNAPSHOT</mm.version>
-    </properties>
-
-    <modules>
-        <module>mm-application</module>
-        <module>mm-controller</module>
-        <module>mm-domain</module>
-        <module>cron</module>
-        <module>utils</module>
-    </modules>
+    <artifactId>utils</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>utils</name>
+    <packaging>jar</packaging>
+    <description>utility tools</description>
 
     <dependencies>
         <dependency>
@@ -45,10 +30,6 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-test</artifactId>
         </dependency>
     </dependencies>
 

@@ -37,7 +37,7 @@ public class Printer {
     @Async
     public void AsyncPrint(String s) throws InterruptedException {
         System.out.print("printer " + loge_ + ":" + "On thread:" + Thread.currentThread().getName() + "\n");
-        Thread.sleep(1000*3);   // 休眠3秒
+        // Thread.sleep(1000*3);   // 休眠3秒
         System.out.print("printer " + loge_ + ":" + s);
     }
 }

@@ -1,0 +1,21 @@
+[
+    {
+        "group_place_holder": "tag_holder_sort_group"
+    },
+    {
+        "group": "地区",
+        "query_param": "smart_tag",
+        "category_id": 1800233
+    },
+    {
+        "group": "类型",
+        "query_param": "smart_tag",
+        "category_id": 1800333
+    },
+    {
+        "group_place_holder": "tag_holder_years_group"
+    },
+    {
+        "group_place_holder": "tag_holder_purchase_group"
+    }   
+]
