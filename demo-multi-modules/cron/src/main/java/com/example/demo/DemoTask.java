@@ -18,7 +18,7 @@ public class DemoTask {
 
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-    // @Scheduled(fixedRate = 5000)
+    @Scheduled(cron = "${scheduled.cron.demo}")
     public void reportCurrentTime() {
         log.info("The time is now {}", dateFormat.format(new Date()));
     }
