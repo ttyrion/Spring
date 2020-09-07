@@ -21,7 +21,7 @@ public class ApplicationContextProxy implements ApplicationContextAware {
     this.applicationContext = applicationContext;
   }
 
-  public ApplicationContext getApplicationContext() {
+  protected ApplicationContext getApplicationContext() {
     return this.applicationContext;
   }
 
