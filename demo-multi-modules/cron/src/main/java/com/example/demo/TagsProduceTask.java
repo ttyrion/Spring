@@ -28,6 +28,9 @@ public class TagsProduceTask extends SchedulingTask {
   public void run() {
     ClassPathResourceReader resReader = new ClassPathResourceReader("config/tags/tag_channel_dianshiju.json");
     String content = resReader.getContent();
+    /**
+    * java String: equals, ==, isEmpty (reference or value)
+    */
     if (content == null || content.isEmpty()) {
       System.out.println("TagsProduceTask get resource failed:" + content);
       return;

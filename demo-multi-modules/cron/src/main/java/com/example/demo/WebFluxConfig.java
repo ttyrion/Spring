@@ -14,6 +14,7 @@ import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.config.EnableWebFlux;
 import org.springframework.web.reactive.config.WebFluxConfigurer;
+import org.springframework.web.reactive.function.client.ExchangeStrategies;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.netty.http.client.HttpClient;
 import io.netty.channel.ChannelOption;
@@ -55,7 +56,7 @@ public class WebFluxConfig implements WebFluxConfigurer {
             .codecs(configurer -> configurer.defaultCodecs().maxInMemorySize(1024 * 1024 * 2)).build();
 
     return WebClient.builder()
-            .baseUrl("http://qipu.qiyi.domain")
+            .baseUrl("http://www.hello.com")
             .clientConnector(connector)
             .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
             .exchangeStrategies(exchangeStrategies)

@@ -81,7 +81,7 @@ public class TagsProducer {
   public CategoryTags getCategoryGroupsTags(List<ChannelTagGroupConfig> groups, int channelId) {
     WebClient webClient = (WebClient)getApplicationContextProxy().getBean("qipuWebClient");
     Mono<String> resp = webClient.get()
-            .uri("/fusion/getEntity?entity_id=30821190812&is_reverse_select=false&specified_column_group=KEY_VALUE_PAIR")
+            .uri("/")
             .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
             .retrieve()
             .bodyToMono(String.class);
