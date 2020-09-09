@@ -47,10 +47,18 @@ public class WebFluxConfig implements WebFluxConfigurer {
     // ClientHttpConnector connector = new ReactorClientHttpConnector(httpClient.wiretap(true));
     ClientHttpConnector connector = new ReactorClientHttpConnector(httpClient);
 
+    /**
+    * 当http数据过大（超过262144字节）时，这里会产生异常：
+    * org.springframework.core.io.buffer.DataBufferLimitException: Exceeded limit on max bytes to buffer : 262144
+    */
+    ExchangeStrategies exchangeStrategies = ExchangeStrategies.builder()
+            .codecs(configurer -> configurer.defaultCodecs().maxInMemorySize(1024 * 1024 * 2)).build();
+
     return WebClient.builder()
             .baseUrl("http://qipu.qiyi.domain")
             .clientConnector(connector)
             .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+            .exchangeStrategies(exchangeStrategies)
             .build();
   }
 }
