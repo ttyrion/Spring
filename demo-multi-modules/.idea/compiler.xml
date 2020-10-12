@@ -6,24 +6,33 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mm-domain" />
         <module name="mm-controller" />
+        <module name="mm-domain" />
+        <module name="core" />
+        <module name="utils" />
         <module name="mm-application" />
+        <module name="cron" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="core" target="1.8" />
+      <module name="cron" target="1.8" />
       <module name="demo-multi-modules" target="1.8" />
       <module name="mm-application" target="1.8" />
       <module name="mm-controller" target="1.8" />
       <module name="mm-domain" target="1.8" />
+      <module name="utils" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="core" options="-parameters" />
+      <module name="cron" options="-parameters" />
       <module name="demo-multi-modules" options="-parameters" />
       <module name="mm-application" options="-parameters" />
       <module name="mm-controller" options="-parameters" />
       <module name="mm-domain" options="-parameters" />
+      <module name="utils" options="-parameters" />
     </option>
   </component>
 </project>

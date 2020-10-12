@@ -6,6 +6,7 @@ package com.example.utils;
 */
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import com.example.utils.resources.ClassPathResourceReader;
 
 /**
 * "static import" imports static methods like assertEquals.

@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cron/cron.iml" filepath="$PROJECT_DIR$/cron/cron.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-multi-modules.iml" filepath="$PROJECT_DIR$/demo-multi-modules.iml" />
       <module fileurl="file://$PROJECT_DIR$/mm-application/mm-application.iml" filepath="$PROJECT_DIR$/mm-application/mm-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/mm-controller/mm-controller.iml" filepath="$PROJECT_DIR$/mm-controller/mm-controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/mm-domain/mm-domain.iml" filepath="$PROJECT_DIR$/mm-domain/mm-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
     </modules>
   </component>
 </project>

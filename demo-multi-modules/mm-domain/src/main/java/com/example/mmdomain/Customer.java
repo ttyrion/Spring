@@ -1,12 +1,16 @@
 package com.example.mmdomain;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.MongoId;
+
 /**
  * @Description:
  * @Date: Created on 16:27 2020/7/28
  */
 
-
+@Document(collection = "tags")
 public class Customer {
+    @MongoId
     private int id;
     private String name;
 

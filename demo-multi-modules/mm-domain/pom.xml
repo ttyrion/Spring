@@ -5,11 +5,11 @@
     <parent>
         <groupId>com.example</groupId>
         <artifactId>demo-multi-modules</artifactId>
-        <version>0.0.2-SNAPSHOT</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.example</groupId>
     <artifactId>mm-domain</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>mm-domain</name>
     <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>

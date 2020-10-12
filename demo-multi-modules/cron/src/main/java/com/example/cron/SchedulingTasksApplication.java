@@ -17,7 +17,7 @@ import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 
 @SpringBootApplication(scanBasePackages = "com.example")
-@EnableScheduling
+// @EnableScheduling
 public class SchedulingTasksApplication {
 
     public static void main(String[] args) {

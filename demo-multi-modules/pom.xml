@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>demo-multi-modules</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>demo-multi-modules</name>
     <packaging>pom</packaging>
     <description>Demo project for Spring Boot</description>
@@ -18,7 +18,6 @@
     <!--子模块将继承这些properties-->
     <properties>
         <java.version>1.8</java.version>
-        <mm.version>0.0.2-SNAPSHOT</mm.version>
     </properties>
 
     <modules>
@@ -27,6 +26,7 @@
         <module>mm-domain</module>
         <module>cron</module>
         <module>utils</module>
+        <module>core</module>
     </modules>
 
     <dependencies>
@@ -50,6 +50,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-test</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
